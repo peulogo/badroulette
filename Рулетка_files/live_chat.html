@@ -1,0 +1,249 @@
+
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="ya-video-summarization-style">
+  /* Channels page */
+  ytd-grid-video-renderer:hover .ya-video-summarization-preview-button,
+  ytd-grid-video-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* Channels video page */
+  ytd-rich-item-renderer:hover .ya-video-summarization-preview-button,
+  ytd-rich-item-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* History page */
+  ytd-video-renderer:hover .ya-video-summarization-preview-button,
+  ytd-video-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* Playlist page */
+  ytd-playlist-video-renderer:hover .ya-video-summarization-preview-button,
+  ytd-playlist-video-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* Playlist video page */
+  ytd-playlist-panel-video-renderer:hover .ya-video-summarization-preview-button,
+  ytd-playlist-panel-video-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* Video page */
+  ytd-compact-playlist-renderer:hover .ya-video-summarization-preview-button,
+  ytd-compact-video-renderer .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active,
+
+  /* Video page Mix */
+  ytd-compact-video-renderer:hover .ya-video-summarization-preview-button,
+
+  /* Video page Current Mix */
+  ytd-compact-radio-renderer:hover .ya-video-summarization-preview-button {
+    opacity: 1;
+  }
+
+  /* Channels page */
+  ytd-grid-video-renderer .ya-video-summarization-preview-button,
+
+  /* Channels video page */
+  ytd-rich-item-renderer .ya-video-summarization-preview-button,
+
+  /* History page */
+  ytd-compact-video-renderer .ya-video-summarization-preview-button,
+
+  /* Playlist page */
+  ytd-playlist-video-renderer .ya-video-summarization-preview-button,
+
+  /* Playlist video page */
+  ytd-playlist-panel-video-renderer .ya-video-summarization-preview-button,
+
+  /* Video page */
+  ytd-video-renderer .ya-video-summarization-preview-button,
+
+  /* Video page Mix */
+  ytd-compact-playlist-renderer .ya-video-summarization-preview-button,
+
+  /* Video page Current Mix */
+  ytd-compact-radio-renderer .ya-video-summarization-preview-button {
+    opacity: 0;
+  }
+  
+  /* import common css variables */
+  
+    .ya-video-summarization-button_promo,
+    .ya-video-summarization-button_soft-promo {
+      --button-promo-icon-fill-active: #FFF;
+      --button-promo-text-color-active: #FFF;
+      --button-promo-text-gradient: linear-gradient(90deg, #FE6E8B 0%, #E459E8 100%);
+      --button-promo-gradient-background: linear-gradient(90deg, #FE6E8B 0%, #E459E8 100%);
+      --button-promo-icon-fill: url(#ya-summarization-icon-promo);
+
+    
+      --button-promo-text-color: #FFF;
+      --button-promo-background-color: #28282E;
+      --button-promo-gradient-background-hover: linear-gradient(90deg, rgb(72,48,58) 0%, rgb(68,47,74) 100%);
+      
+    }
+    .ya-video-summarization-button_search-app.ya-video-summarization-button_promo,
+    .ya-video-summarization-button_search-app.ya-video-summarization-button_soft-promo {
+      --icon-fill-gradient: #FF3333;
+      --button-promo-gradient-background: #F8604A;
+      --button-promo-gradient-background-hover: #FFF;
+      --button-promo-icon-fill: #F8604A;
+      
+      
+      
+      --button-promo-icon-fill-active: #FFF;
+      --button-promo-text-color: #FFF;
+      --button-promo-background-color: #28282E;
+    
+    }
+    .ya-video-summarization-preview-button.ya-video-summarization-button_soft-promo svg path,
+    .ya-video-summarization-preview-button.ya-video-summarization-button_promo svg path {
+      fill: var(--button-promo-icon-fill);
+    }
+
+    .ya-video-summarization-preview-button.ya-video-summarization-button_promo .ya-video-summarization-preview-label {
+      color: transparent;
+      background: var(--button-promo-text-gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ya-video-summarization-preview-button.ya-video-summarization-button_promo .ya-video-summarization-preview-icon-container,
+    .ya-video-summarization-preview-button.ya-video-summarization-button_promo .ya-video-summarization-preview-label-container {
+      background-color: var(--button-promo-background-color);
+    }
+
+    
+  .ya-video-summarization-preview-button:hover.ya-video-summarization-button_promo .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button:hover.ya-video-summarization-button_promo .ya-video-summarization-preview-label-container,
+  .ya-video-summarization-preview-button:hover.ya-video-summarization-button_soft-promo .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button:hover.ya-video-summarization-button_soft-promo .ya-video-summarization-preview-label-container {
+    background: var(--button-promo-gradient-background-hover);
+  }
+
+
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_promo .ya-video-summarization-preview-label-container,
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_promo .ya-video-summarization-preview-icon-container,
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_soft-promo .ya-video-summarization-preview-label-container,
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_soft-promo .ya-video-summarization-preview-icon-container {
+      background: var(--button-promo-gradient-background);
+    }
+
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_promo svg path,
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_soft-promo svg path {
+      fill: var(--button-promo-icon-fill-active);
+    }
+
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_promo .ya-video-summarization-preview-label,
+    .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active.ya-video-summarization-button_soft-promo .ya-video-summarization-preview-label {
+      color: var(--button-promo-text-color-active);
+      background: transparent;
+      -webkit-text-fill-color: var(--button-promo-text-color-active);
+    }
+
+  
+  .ya-video-summarization-preview-button {
+    /* Theme colors. */
+    
+      --button-background-color: rgb(40, 40, 46);
+      --button-background-color-active: rgb(100, 100, 104);
+      --button-background-color-hover: rgb(79, 79, 84);
+      --button-background-color-click: rgb(92, 92, 96);
+      --button-text-color: rgba(255, 255, 255, 0.69);
+      --button-text-color-active: rgb(255, 255, 255);
+      --button-icon-fill: rgba(255, 255, 255, 0.69);
+      --button-icon-fill-active: rgb(255, 255, 255);
+    
+  }
+
+  .ya-video-summarization-preview-button {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 32px;
+    max-width: calc(70% - 16px);
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: transparent;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ya-video-summarization-preview-button:not(#ya-video-summarization-clone-button) {
+    position: absolute !important;
+  }
+
+  .ya-video-summarization-preview-button_hidden,
+  .ya-video-summarization-preview-button_hidden .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button_hidden .ya-video-summarization-preview-label-container {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ya-video-summarization-preview-label {
+    font-family: YS Text, "Segoe UI", BlinkMacSystemFont, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    padding: 6px 8px 6px 32px;
+    color: var(--button-text-color);
+  }
+
+  .ya-video-summarization-preview-icon-container {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 6px;
+    box-sizing: border-box;
+    opacity: 1;
+  }
+
+  .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-label-container {
+    pointer-events: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--button-background-color);
+  }
+
+  .ya-video-summarization-preview-label-container {
+    margin-left: -32px;
+  }
+
+  .ya-video-summarization-preview-button svg {
+    z-index: 10;
+  }
+
+  .ya-video-summarization-preview-button svg path {
+    fill: var(--button-icon-fill);
+  }
+
+  
+  .ya-video-summarization-preview-button:hover .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button:hover  .ya-video-summarization-preview-label-container {
+    background-color: var(--button-background-color-hover);
+  }
+
+  .ya-video-summarization-preview-button:hover .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button:hover  .ya-video-summarization-preview-label-container {
+    background-color: var(--button-background-color-hover);
+  }
+
+
+  .ya-video-summarization-preview-button:active .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button:active .ya-video-summarization-preview-label-container {
+    background-color: var(--button-background-color-click);
+  }
+  
+  .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active .ya-video-summarization-preview-label {
+    color: var(--button-text-color-active);
+  }
+  
+  .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active svg path {
+    fill: var(--button-icon-fill-active);
+  }
+
+  .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active .ya-video-summarization-preview-icon-container,
+  .ya-video-summarization-preview-button.ya-video-summarization-preview-button_active .ya-video-summarization-preview-label-container {
+    background-color: var(--button-background-color-active);
+  }
+</style></head><body><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" style="opacity:0; position:absolute; left:-100vw; pointer-events:none" tabindex="-1" aria-hidden="true"><path class="ya-video-summarization-button" d="M8.13364 9.4289e-07C6.50852 -3.00274e-05 5.1837 -5.52877e-05 4.13844 0.13245C3.04714 0.270793 2.10573 0.569592 1.35491 1.27753C0.60409 1.98548 0.287194 2.87313 0.140473 3.9021C-5.86363e-05 4.88767 -3.1846e-05 6.13683 9.99998e-07 7.66914V9.02946C-3.17185e-05 10.5593 -5.84337e-05 11.8064 0.140049 12.7905C0.28632 13.8179 0.602223 14.7043 1.35082 15.412L1.359 15.4197C2.10948 16.1255 3.04964 16.4234 4.13926 16.5613C5.18296 16.6934 6.50563 16.6934 8.12809 16.6934H8.20291C8.91508 16.6934 9.03327 16.7054 9.13134 16.7368L9.1322 16.7371C9.23024 16.7686 9.33169 16.8271 9.89598 17.2367L13.7022 20V18.7585V17.517L11.1689 15.6779C11.1391 15.6562 11.1095 15.6347 11.0801 15.6133L11.0796 15.6129C10.6594 15.3069 10.2724 15.0251 9.80557 14.875L9.80265 14.874C9.33567 14.7244 8.8466 14.7251 8.31577 14.7258C8.29489 14.7259 8.27395 14.7259 8.25293 14.7259C8.2363 14.7259 8.21963 14.726 8.20291 14.726C6.48736 14.726 5.30548 14.7239 4.41687 14.6114C3.55818 14.5027 3.13089 14.3074 2.83257 14.0268L2.82809 14.0225C2.53051 13.7413 2.32333 13.3384 2.20806 12.5287C2.08877 11.6909 2.08656 10.5765 2.08656 8.95889V7.73983C2.08656 6.11959 2.08877 5.00336 2.20842 4.16425C2.32404 3.35344 2.53181 2.95017 2.83033 2.66869C3.12885 2.38722 3.55655 2.19132 4.41647 2.0823C5.3064 1.96949 6.49023 1.9674 8.20861 1.9674H11.7913C13.5097 1.9674 14.6935 1.96949 15.5834 2.0823C16.4433 2.19132 16.871 2.38722 17.1696 2.66869C17.4681 2.95017 17.6759 3.35344 17.7915 4.16425C17.9111 5.00337 17.9133 6.11959 17.9133 7.73984V11.0822C17.9133 12.3151 17.9023 12.7166 17.8069 13.0174C17.5619 13.7901 16.9208 14.3946 16.1013 14.6256C15.7823 14.7156 15.3564 14.726 14.0489 14.726L13.7813 15.7097L14.0489 16.6934L14.2175 16.6934C15.286 16.6939 16.0475 16.6942 16.6989 16.5106C18.1919 16.0898 19.3598 14.9886 19.8061 13.5809C20.0008 12.9667 20.0005 12.2487 19.9999 11.2412L19.9999 7.66918C19.9999 6.13689 20 4.88766 19.8594 3.9021C19.7127 2.87313 19.3958 1.98548 18.645 1.27753C17.8942 0.569592 16.9528 0.270793 15.8615 0.13245C14.8162 -5.52877e-05 13.4914 -3.00274e-05 11.8663 9.4289e-07H8.13364Z" fill="url(#ya-summarization-icon-promo)"></path><path class="ya-video-summarization-button" d="M14.2482 9.6609C14.2482 10.1655 14.0724 10.5828 13.7208 10.9127C13.3899 11.2233 12.9349 11.3785 12.3558 11.3785C11.7974 11.3785 11.332 11.2039 10.9598 10.8545C10.5875 10.5052 10.4014 9.99084 10.4014 9.31154C10.4014 8.92337 10.4634 8.5352 10.5875 8.14703C10.7116 7.73945 10.877 7.36099 11.0839 7.01163C11.2907 6.66228 11.5078 6.33233 11.7353 6.0218C11.9629 5.71126 12.1904 5.44925 12.4179 5.23575H14.4344C14.1241 5.5657 13.8242 5.96357 13.5347 6.42938C13.2658 6.87577 13.0383 7.3901 12.8522 7.97235C13.2865 8.0694 13.6278 8.27319 13.8759 8.58372C14.1241 8.89426 14.2482 9.25332 14.2482 9.6609ZM9.16043 9.6609C9.16043 10.1655 8.98464 10.5828 8.63304 10.9127C8.30213 11.2233 7.84712 11.3785 7.26803 11.3785C6.70961 11.3785 6.24427 11.2039 5.87199 10.8545C5.49971 10.5052 5.31357 9.99084 5.31357 9.31154C5.31357 8.92337 5.37562 8.5352 5.49971 8.14703C5.6238 7.73945 5.78926 7.36099 5.99608 7.01163C6.2029 6.66228 6.42006 6.33233 6.64757 6.0218C6.87507 5.71126 7.10257 5.44925 7.33007 5.23575H9.34657C9.03634 5.5657 8.73645 5.96357 8.4469 6.42938C8.17804 6.87577 7.95053 7.3901 7.7644 7.97235C8.19872 8.0694 8.53997 8.27319 8.78816 8.58372C9.03634 8.89426 9.16043 9.25332 9.16043 9.6609Z" fill="url(#ya-summarization-icon-promo)"></path><defs><lineargradient id="ya-summarization-icon-promo" x1="22" x2="2" y1="10.941" y2="10.941" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF5C8B"></stop><stop offset="1" stop-color="#FF6C5C"></stop></lineargradient></defs></svg><div id="af-error-page2"><title>Oops</title><style nonce="">html{font-family:Roboto,Arial,sans-serif;font-size:14px}body{background-color:#f9f9f9;margin:0}#content{max-width:440px;margin:128px auto}svg{display:block;pointer-events:none}#monkey{width:280px;margin:0 auto}h1,p{text-align:center;margin:0;color:#131313}h1{padding:24px 0 8px;font-size:24px;font-weight:400}p{line-height:21px}sentinel{}</style><link rel="shortcut icon" href="https://www.youtube.com/img/favicon.ico" type="image/x-icon"><link rel="icon" href="https://www.youtube.com/img/favicon_32.png" sizes="32x32"><link rel="icon" href="https://www.youtube.com/img/favicon_48.png" sizes="48x48"><link rel="icon" href="https://www.youtube.com/img/favicon_96.png" sizes="96x96"><link rel="icon" href="https://www.youtube.com/img/favicon_144.png" sizes="144x144"><div id="content"><h1>Something went wrong</h1><p><svg id="monkey" viewBox="0 0 490 525"><path fill="#6A1B9A" d="M325 85c1 12-1 25-5 38-8 29-31 52-60 61-26 8-54 14-81 18-37 6-26-37-38-72l-4-4c0-17-9-33 4-37l33-4c9-2 9-21 11-30 1-7 3-14 5-21 8-28 40-42 68-29 18 9 36 19 50 32 13 11 16 31 17 48z"></path><path fill="none" stroke="#6A1B9A" stroke-width="24" stroke-linecap="round" stroke-miterlimit="10" d="M431 232c3 15 21 19 34 11 15-9 14-30 5-43-12-17-38-25-59-10-23 18-27 53-21 97s1 92-63 108"></path><path fill="#6A1B9A" d="M284 158c35 40 63 85 86 133 24 52-6 113-62 123-2 0-4 1-6 1-53 9-101-33-101-87V188l83-30z"></path><path fill="#F7CB4D" d="M95 152c-3-24 13-57 46-64l27-5c9-2 16-19 17-28l3-15 20-3c44 14 42 55 18 69 22 0 39 26 32 53-5 18-20 32-39 36-13 3-26 5-40 8-50 8-80-14-84-51z"></path><path fill="#6A1B9A" d="M367 392c-21 18-77 70-25 119h-61c-27-29-32-69 1-111l85-8z"></path><path fill="#6A1B9A" d="M289 399c-21 18-84 62-32 111h-61c-37-34-5-104 43-134l50 23z"></path><path fill="#EDB526" d="M185 56l3-15 20-3c25 8 35 25 35 41-12-18-49-29-58-23z"></path><path fill="#E62117" d="M190 34c8-28 40-42 68-29 18 9 36 19 50 32 10 9 14 23 16 37L187 46l3-12z"></path><path fill="#8E24AA" d="M292 168c0 0 0 201 0 241s20 98 91 85l-16-54c-22 12-31-17-31-37 0-20 0-108 0-137S325 200 292 168z"></path><path fill="#F7CB4D" d="M284 79c11-9 23-17 35-23 25-12 54 7 59 38v1c4 27-13 51-36 53-12 1-25 1-37 0-22-1-39-27-32-52v-1c2-6 6-12 11-16z"></path><path fill="#6A1B9A" d="M201 203s0 84-95 140l22 42s67-25 89-86-16-96-16-96z"></path><path fill="#BE2117" d="M224 54l-67-14c-10-2-13-15-5-21s18-6 26 0l46 35z"></path><circle fill="#4A148C" cx="129" cy="161" r="12"></circle><circle fill="#4A148C" cx="212" cy="83" r="7"></circle><circle fill="#4A148C" cx="189" cy="79" r="7"></circle><path fill="#F7CB4D" d="M383 493c11-3 19-8 25-13 7-10 4-16-5-20 8-9 2-22-8-18 1-1 1-2 1-3 3-9-9-15-15-8-3 4-8 7-13 9l15 53z"></path><path fill="#EDB526" d="M252 510c5 6 0 15-9 15h-87c-10 0-16-8-13-15 5-12 21-19 36-16l73 16z"></path><ellipse transform="rotate(19.126 278.35 14.787)" fill="#E62117" cx="278" cy="15" rx="9" ry="7"></ellipse><path fill="#F7CB4D" d="M341 510c5 6 0 15-9 15h-87c-10 0-16-8-13-15 5-12 21-19 36-16l73 16z"></path><path fill="#EDB526" d="M357 90c-12-19-35-23-55-11-19 12-25 32-13 52"></path><path fill="#E62117" d="M110 427l21-9c5-2 7-8 5-13l-42-94c-3-6-9-9-15-6l-11 5c-6 2-9 9-7 15l36 97c2 5 8 7 13 5z"></path><path fill="#B0BEC5" d="M37 278l41-17c11-4 22-5 33-1 5 2 10 4 14 6 6 3 4 11-3 11-9 0-18 1-26 3l2 12c1 6-2 11-8 13l-36 15c-5 2-10 1-14-2l-9-7-2 17c0 2-2 4-4 5l-3 1c-3 1-7 0-8-3L1 300c-1-3 0-7 4-9l4-2c2-1 5 0 7 1l12 10 1-11c0-5 3-9 8-11z"></path><path fill="#F7CB4D" d="M103 373c10 2 14 10 8 19 6-1 10 4 10 9 0 3-3 6-6 7l-26 11c-2 1-5 1-8 0-6-3-7-9-2-16-7-1-13-9-6-17-8-1-12-8-8-15l3-3 23-11c9-4 19 8 12 16z"></path><ellipse transform="rotate(173.3 233.455 334.51)" fill="#8E24AA" cx="234" cy="335" rx="32" ry="46"></ellipse></svg></p><style nonce="">#yt-masthead{margin:15px auto;width:440px;margin-top:25px}#logo-container{margin-right:5px;float:left;cursor:pointer;text-decoration:none}.logo{background:no-repeat url(//www.gstatic.com/youtube/img/branding/youtubelogo/1x/youtubelogo_30.png);width:125px;height:30px;cursor:pointer;display:inline-block}#masthead-search{display:-webkit-box;display:-webkit-flex;display:flex;margin-top:3px;max-width:650px;overflow:hidden;padding:0;position:relative}.search-button{border-left:0;border-top-left-radius:0;border-bottom-left-radius:0;float:right;height:29px;padding:0;border:solid 1px transparent;border-color:#d3d3d3;background:#f8f8f8;color:#333;cursor:pointer}.search-button:hover{border-color:#c6c6c6;background:#f0f0f0;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.1);box-shadow:0 1px 0 rgba(0,0,0,.1)}.search-button-content{border:none;display:block;opacity:.6;padding:0;text-indent:-10000px;background:no-repeat url(//www.gstatic.com/youtube/src/web/htdocs/img/search.png);-webkit-background-size:auto auto;background-size:auto;width:15px;height:15px;-webkit-box-shadow:none;box-shadow:none;margin:0 25px}#masthead-search-terms-border{-webkit-box-flex:1;-webkit-flex:1 1 auto;flex:1 1 auto;border:1px solid #ccc;-webkit-box-shadow:inset 0 1px 2px #eee;box-shadow:inset 0 1px 2px #eee;background-color:#fff;font-size:14px;height:29px;line-height:30px;margin:0 0 2px;overflow:hidden;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:border-color .2s ease;transition:border-color .2s ease}#masthead-search-terms{background:transparent;border:0;font-size:16px;height:100%;left:0;margin:0;outline:none;padding:2px 6px;position:absolute;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}sentinel{}</style><div id="yt-masthead"><a id="logo-container" href="https://www.youtube.com/" title="Главная страница YouTube"><span class="logo" title="Главная страница YouTube"></span><span class="content-region">RU</span></a><form id="masthead-search" class="search-form" action="https://www.youtube.com/results"><script nonce="">document.addEventListener('DOMContentLoaded', function () {document.getElementById('masthead-search').addEventListener('submit', function(e) {if (document.getElementById('masthead-search-terms').value == '') {e.preventDefault();}});});</script><div id="masthead-search-terms-border" dir="ltr"><input id="masthead-search-terms" autocomplete="off" name="search_query" value="" type="text" placeholder="Поиск" title="Поиск" aria-label="Поиск"><script nonce="">document.addEventListener('DOMContentLoaded', function () {document.getElementById('masthead-search-terms').addEventListener('keydown', function() {if (!this.value && (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}});});</script></div><button id="masthead-search-button" class="search-button" type="submit" dir="ltr"><script nonce="">document.addEventListener('DOMContentLoaded', function () {document.getElementById('masthead-search-button').addEventListener('click', function(e) {if (document.getElementById('masthead-search-terms').value == '') {e.preventDefault(); return;}e.preventDefault(); document.getElementById('masthead-search').submit();});});</script><span class="search-button-content">Поиск</span></button></form></div></div></div></body></html>

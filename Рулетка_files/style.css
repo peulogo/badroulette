@@ -1,0 +1,2003 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.roulette_button {
+  border: 1px solid #A6A6A6;
+  width: 80px;
+  font-size: 16px;
+  text-align: center;
+  padding: 2px 0;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: azure;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.roulette_button.disabled {
+  background-color: gainsboro;
+  cursor: default;
+}
+
+.login_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login_link {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #A6A6A6;
+  padding: 5px 8px;
+}
+
+.login_img {
+  margin-left: 10px;
+  height: 20px;
+}
+
+.login_login {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+}
+
+.login_back {
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #A6A6A6;
+}
+
+.login_page_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  border: 2px solid #A6A6A6;
+  width: 200px;
+  margin: 50px auto;
+  padding: 10px 20px;
+}
+
+.login_page_input {
+  border-radius: 7px;
+  border: 1px solid #A6A6A6;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.choose_content {
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose_text {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.choose_stream_block {
+  width: 500px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 1px solid #A6A6A6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.choose_stream_name {
+  font-weight: 400;
+  display: flex;
+  max-width: calc(100% - 110px);
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.stream_arrow_img {
+  height: 15px;
+}
+
+.stream_content {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stream_info_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  pointer-events: none;
+}
+
+.stream_info {
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.stream_info_exclamation {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 12px;
+}
+
+.stream_info_content {
+  margin-right: 10px;
+  display: flex;
+}
+
+.stream_logout {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.stream_logout > img {
+  width: 35px;
+}
+
+.stream_fake, .stream_add_fakes {
+  height: 20px;
+  display: none;
+  margin-left: 5px;
+}
+
+.stream_add_fakes {
+  cursor: pointer;
+}
+
+.stream_video {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.stream_bottom_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: -411px;
+  z-index: 1;
+}
+
+.stream_bottom_content {
+  background: #1C7022;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 391px;
+  padding: 20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.stream_bottom_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  color: black;
+  background-color: rgba(166, 166, 166, 0.5);
+  width: 100%;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0% 100%);
+          clip-path: polygon(50% 0, 100% 100%, 50% 100%, 0% 100%);
+  cursor: pointer;
+}
+
+.stream_bottom_arrow > img {
+  display: none;
+}
+
+.stream_open_table {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.stream_close_table {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.stream_close_table_bottom {
+  bottom: 10px;
+  right: 10px;
+}
+
+.stream_close_table_roulette {
+  left: calc(50% - 20px);
+  bottom: calc(50% - 25px);
+  width: 50px;
+  display: none;
+}
+
+.stream_close_table_track {
+  width: 50px;
+  right: 20px;
+  bottom: -40px;
+  display: none;
+}
+
+.stream_field_block {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.stream_roulette_block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.stream_track_block {
+  width: 50%;
+  position: relative;
+}
+
+.stream_summary_block {
+  width: 100%;
+  max-width: 1420px;
+  height: 70px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  color: white;
+  justify-content: space-between;
+}
+
+.stream_balance_block {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.stream_balance, .stream_table_maximum {
+  margin-left: 10px;
+}
+
+.stream_balance_change {
+  color: aqua;
+  margin-left: 10px;
+}
+
+.stream_chips_block {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.stream_summary_block > .stream_bets_total {
+  width: 100px;
+  padding: 0;
+}
+
+.stream_table_maximum_block, .stream_bets_balance {
+  width: 100%;
+  padding: 0 10px 5px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.stream_bet_number {
+  margin-top: 5px;
+}
+
+.stream_bets_change {
+  color: aqua;
+}
+
+.stream_bets_change.negative {
+  color: #C00;
+}
+
+.stream_buttons_block {
+  display: flex;
+  visibility: hidden;
+  color: black;
+  width: 250px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stream_buttons_block > img {
+  width: 40px;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.stream_buttons_block > img.disabled {
+  filter: invert(0.7);
+  cursor: default;
+}
+
+.stream_participate {
+  display: none;
+}
+
+.stream_ask_block {
+  position: fixed;
+  width: 500px;
+  height: 60px;
+  color: white;
+  background-color: #0E3811;
+  top: calc(50vh - 30px);
+  left: calc(50vw - 250px);
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid #A6A6A6;
+  box-sizing: border-box;
+  display: none;
+}
+
+.stream_ask, .stream_resume {
+  color: aqua;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.stream_ended_seconds {
+  margin: 0 4px;
+}
+
+.stream_bets_block {
+  display: flex;
+  position: fixed;
+  height: 300px;
+  top: calc(50% - 150px);
+  right: -300px;
+  z-index: 3;
+}
+
+.stream_bets_content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.stream_bets_arrow {
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.8;
+  background-color: black;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+  cursor: pointer;
+}
+
+.stream_bets_arrow > span {
+  transform: rotate(90deg);
+  white-space: nowrap;
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.stream_bets_arrow > img {
+  display: none;
+  transform: rotate(-90deg);
+}
+
+.stream_petal {
+  display: none;
+}
+
+.stream_telegram_arrow {
+  position: fixed;
+  right: 0;
+  bottom: calc(50% + 200px);
+  height: 300px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.8;
+  background-color: #24a1de;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+          clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 50%);
+  cursor: pointer;
+}
+
+.stream_telegram_arrow > span {
+  transform: rotate(90deg);
+  white-space: nowrap;
+  font-weight: 900;
+  margin-left: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.stream_bets {
+  width: 100%;
+  display: none;
+  flex-direction: column-reverse;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: white;
+  height: 222px;
+  overflow-y: auto;
+}
+
+.stream_bets_line {
+  width: calc(100% - 20px);
+  color: white;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.stream_bets_total {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.stream_bets_total > span {
+  margin-left: 10px;
+}
+
+.stream_chat_block {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: -300px;
+  z-index: 3;
+}
+
+.stream_chat_content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: black;
+}
+
+.stream_chat_arrow {
+  height: 300px;
+  width: 40px;
+  margin-top: calc(50vh - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #c4302b;
+  opacity: 0.8;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+  cursor: pointer;
+}
+
+.stream_chat_arrow > span {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.stream_chat_arrow > img {
+  display: none;
+  transform: rotate(90deg);
+}
+
+.stream_numbers_block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: auto;
+  width: 100%;
+  max-width: 1400px;
+  height: 50px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  scrollbar-width: thin;
+}
+
+.stream_numbers_label {
+  position: sticky;
+  left: 0;
+  background-color: #1C7022;
+  padding: 4px;
+}
+
+.stream_number {
+  margin-left: 5px;
+  font-size: 18px;
+  border: 1px solid white;
+  height: 23px;
+  box-sizing: border-box;
+  min-width: 23px;
+  text-align: center;
+}
+
+.stream_number.green.hover {
+  background: #3CC042 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.stream_number.red.hover {
+  background: #C00 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.stream_number.black.hover {
+  background: #000 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.stream_number.red, .admin_spin_number.red {
+  background: #A91607;
+}
+
+.stream_number.black, .admin_spin_number.black {
+  background: #0E3811;
+}
+
+.stream_number.green, .admin_spin_number.green {
+  background: #1C7022;
+}
+
+.stream_number:nth-child(2) {
+  height: 25px;
+  min-width: 25px;
+  font-size: 20px;
+  border-color: #FBEC0F;
+}
+
+.admin_spin_number:nth-child(2) {
+  height: 27px;
+  min-width: 27px;
+  font-size: 22px;
+  color: #FBEC0F;
+}
+
+.stream_chip {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.stream_chip_selected {
+  border: 2px solid white;
+}
+
+.stream_field_chip, .stream_chip_favorites {
+  height: 60%;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #8EB891;
+  color: black;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.border > .stream_field_chip, .border > .stream_chip_favorites {
+  height: 600%;
+  left: -250%;
+  top: -250%;
+}
+
+.vertical > .stream_field_chip, .vertical > .stream_chip_favorites {
+  top: 20%;
+  height: 60%;
+}
+
+.horizontal > .stream_field_chip, .street > .stream_field_chip, .horizontal > .stream_chip_favorites, .street > .stream_chip_favorites {
+  left: 20%;
+}
+
+.zero > .stream_field_chip, .zero > .stream_chip_favorites {
+  height: 20%;
+  top: 40%;
+  left: 26.5%;
+}
+
+.admin_roulette_12s > .sector > .stream_field_chip, .admin_roulette_12s > .sector > .stream_chip_favorites {
+  left: 42.5%;
+}
+
+.admin_roulette_50s > .sector > .stream_field_chip, .admin_roulette_12s > .sector > .stream_chip_favorites {
+  left: 35%;
+}
+
+.stream_chip_favorites {
+  z-index: 10;
+  background-color: #A6A6A6;
+}
+
+.stream_swap, .stream_rotate {
+  position: absolute;
+  display: none;
+  width: 50px;
+  z-index: 2;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.stream_swap_roulette {
+  left: calc(50% - 25px);
+  bottom: calc(50% - 25px);
+}
+
+.stream_swap_track {
+  left: 20px;
+  bottom: -40px;
+}
+
+.stream_swap_vt {
+  right: 10px;
+  top: 10px;
+}
+
+.stream_rotate {
+  left: calc(50% - 15px);
+  bottom: -40px;
+  display: flex;
+  width: 30px;
+}
+
+.admin_balance_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin_balance_td {
+  display: flex;
+  align-items: center;
+}
+
+.admin_balance_block > div {
+  display: flex;
+  align-items: center;
+}
+
+.stream_erase {
+  background-color: #A6A6A6;
+  font-size: 24px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.stream_favorites_notification {
+  margin-bottom: 10px;
+  color: #FBEC0F;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+}
+
+.admin_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 1300px;
+  height: 50px;
+  margin: 0 auto 30px;
+  border-bottom: 1px solid #A6A6A6;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.admin_header_left, .admin_header_right, .admin_header_left > a, .admin_header_right > a {
+  display: flex;
+  align-items: center;
+}
+
+.admin_header_close_button, .admin_header_tournament_close_button, .admin_header_ezugi_close_button {
+  display: none;
+}
+
+.admin_header_stream_status {
+  margin-right: 10px;
+}
+
+.admin_online {
+  color: #1C7022;
+  font-weight: 600;
+}
+
+.admin_offline {
+  color: #A6A6A6;
+  font-weight: 600;
+}
+
+.admin_header_username {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.admin_stream_settings, .admin_tournament_settings, .admin_ezugi_settings {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  height: 450px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #A6A6A6;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.admin_ezugi_settings {
+  height: 320px;
+  width: 450px;
+}
+
+.admin-last-seen {
+  margin-top: 5px;
+  color: blue;
+}
+
+.admin_stream_settings_submit, .admin_tournament_submit {
+  margin: 0 auto;
+}
+
+.admin_content {
+  width: 1300px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin_waiting_users {
+  margin-top: 40px;
+}
+
+.admin_table {
+  border-collapse: collapse;
+}
+
+.admin_table_large {
+  width: 220px;
+  min-width: 220px;
+  text-align: start;
+  overflow: hidden;
+}
+
+.admin_table_small {
+  width: 110px;
+  min-width: 100px;
+  text-align: start;
+}
+
+.admin_table > tbody > tr {
+  border-bottom: 1px solid #A6A6A6;
+}
+
+.admin_table > tbody > tr > th, .admin_table > tbody > tr > td {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.admin_active_users_block {
+  position: relative;
+}
+
+.admin_stream_balance, .admin_stream_deposit {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.admin_stream_balance_input, .admin_stream_deposit_input, .admin_system_balance_input {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.admin_balance_button {
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+}
+
+.admin_system_balance {
+  color: #A6A6A6;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.admin_balance_migrate {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 20%;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #A6A6A6;
+}
+
+.admin_balance_migrate_input {
+  width: 70px;
+}
+
+.admin_chip_block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.admin_chip, .stream_chip {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  margin-right: 10px;
+}
+
+.admin_chip_value, .stream_chip_value, .stream_erase {
+  font-weight: 900;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+.stream_chip_value {
+  pointer-events: none;
+}
+
+.admin_chip_add_block {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #A6A6A6;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  top: 100%;
+  left: 200px;
+  z-index: 2;
+}
+
+.admin_chip_add_possible_colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin_chip_add_possible_color {
+  border-radius: 100%;
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  border: 2px solid white;
+  outline: 1px solid black;
+}
+
+.admin_chip_add_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin_active_users > tbody > tr > td:last-child {
+  position: relative;
+}
+
+.admin_active_users > tbody > tr > td:last-child > .roulette_button {
+  margin-bottom: 5px;
+}
+
+.admin_tournament {
+  display: none;
+}
+
+.admin_bets_label {
+  margin: 50px 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.admin_auto_check {
+  display: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 23px !important;
+  height: 23px !important;
+  margin: 2px 5px 1px 1px;
+}
+
+.admin_auto_check img {
+  display: none;
+  width: 19px;
+  height: 19px;
+}
+
+.admin_auto_check.active img {
+  display: block;
+}
+
+.admin_bets_group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: calc(100% - 250px);
+  margin: 20px 0 10px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.admin_bets_group span {
+  text-align: center;
+  cursor: pointer;
+  width: 130px;
+}
+
+.admin_bets_group .admin_table_small {
+  display: flex;
+  justify-content: center;
+}
+
+.admin_not_kept {
+  display: flex;
+  align-items: center;
+  color: #C00;
+  font-weight: 600;
+}
+
+.admin_not_kept > .admin_bet_value {
+  color: black;
+}
+
+.admin_not_kept > div:not(:first-child) {
+  display: flex;
+  justify-content: center;
+}
+
+.admin_bets_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+}
+
+.admin_bets_block > .admin_table {
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.admin_bets {
+  display: flex;
+  width: 860px;
+  flex-direction: column;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.admin_bets > .admin_bet {
+  margin-left: 20px;
+}
+
+.admin_bets_user {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #A6A6A6;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.admin_bets_user_name, .admin_bets_spin_pk, .admin_past_bets_user_name {
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.admin_bet, .admin_past_bet {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1px;
+  min-height: 30px;
+}
+
+.admin_bet_value {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 35px;
+}
+
+.admin_bet_value > span {
+  font-weight: 900;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+.admin_bet > .admin_table_small, .admin_past_bet > .admin_table_small, .admin_bet > .admin_table_large,
+.admin_past_bet > .admin_table_large, .admin_bets_block > table > tbody > tr > th {
+  text-align: center;
+}
+
+.admin_bet > .admin_table_large:first-child, .admin_past_bet > .admin_table_large:first-child {
+  text-align: start;
+}
+
+.admin_bet_spin {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.admin_undo_spin {
+  height: 40px;
+  cursor: pointer;
+}
+
+.admin_past_bets {
+  overflow-y: auto;
+  padding: 5px 10px 5px 25px;
+  box-sizing: border-box;
+  border-top: none;
+  display: flex;
+  flex-direction: column-reverse;
+  max-height: 450px;
+  min-width: 920px;
+  margin-bottom: 20px;
+}
+
+.admin_load_history, .admin_load_balance_changes {
+  margin: 10px auto;
+}
+
+.admin_past_bets_spin {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.admin_past_bets_user {
+  display: none;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.admin_spin_number {
+  border: 1px solid black;
+  color: white;
+  min-width: 23px;
+  width: 23px;
+  height: 23px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.admin_background, .stream_background {
+  background-color: rgba(166, 166, 166, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.admin_background_content, .stream_favorites_block, .stream_settings_block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #A6A6A6;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.stream_favorites_block, .stream_settings_block {
+  background-color: #1c7022;
+  align-items: center;
+}
+
+.stream_favorites_label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.stream_complex_select {
+  margin-bottom: 20px;
+  padding: 2px 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.stream_complex_select > option {
+  color: black;
+}
+
+.stream_confidential {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.stream_confidential > input {
+  margin-left: 10px;
+}
+
+.stream_system_balance_block {
+  color: white;
+  margin-top: 20px;
+}
+
+.stream_system_balance {
+  margin: 0 5px;
+}
+
+.admin_background_cancel, .admin_background_change, .admin_background_tournament_last_spin > .admin_background_tournament_end, .admin_background_tournament_last_spin > .admin_background_tournament_continue {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+.admin_background_cancel_content, .admin_background_close_bets, .admin_background_tournament_end_submit, .admin_background_question, .admin_background_tournament_last_spin, .stream_logout_confirmation_block {
+  display: none;
+  flex-direction: column;
+}
+
+.admin_background_cancel_buttons {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.admin_timeout_block {
+  width: 250px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.admin_timeout_input {
+  width: 80px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.admin_timeout {
+  display: none;
+  width: 80px;
+  text-align: center;
+}
+
+.stream_timeout {
+  display: none;
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.spin_cancelled {
+  opacity: 0.5;
+}
+
+.admin_spin_number.spin_cancelled {
+  pointer-events: none;
+}
+
+.admin_bets_spin_pk {
+  margin: 0 30px;
+  width: 50px;
+}
+
+.admin_numbers_block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 860px;
+  overflow: auto;
+  scrollbar-width: thin;
+  margin-bottom: 50px;
+}
+
+.admin_numbers_label {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: white;
+  position: sticky;
+  left: 0;
+}
+
+.admin_balance_changes {
+  display: flex;
+  width: 860px;
+}
+
+.admin_balance_changes_emails {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin_balance_changes_users {
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+}
+
+.admin_balance_changes_spins {
+  display: flex;
+  width: 100%;
+}
+
+.admin_balance_changes_spins > div, .admin_balance_changes_user > div {
+  text-align: center;
+}
+
+.admin_balance_changes_user {
+  display: flex;
+  align-items: center;
+}
+
+.admin_close_bets, .admin_open_bets, .admin_set_result {
+  margin: 10px auto;
+}
+
+.admin_checkbox_warning {
+  color: orangered;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.admin_set_result_block {
+  background-color: #1C7022;
+  padding: 10px 20px;
+  display: none;
+  position: relative;
+}
+
+.admin_set_result_table, .stream_complex_table {
+  border-collapse: collapse;
+}
+
+.stream_complex_table {
+  margin-bottom: 20px;
+}
+
+.admin_result_number, .admin_background_number, .stream_complex_number {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  color: #8EB891;
+  font-weight: 600;
+  border: 2px solid white;
+}
+
+.admin_result_number.green, .admin_background_number.green, .stream_complex_number.green {
+  background: #1C7022;
+}
+
+.admin_result_number.red, .admin_background_number.red, .stream_complex_number.red {
+  background: #A91607;
+}
+
+.admin_result_number.black, .admin_background_number.black, .stream_complex_number.black {
+  background: #0E3811;
+}
+
+.admin_result_number.green:hover, .admin_background_number.green:hover, .stream_complex_number.green:hover {
+  background: #3CC042 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.admin_result_number.red:hover, .admin_background_number.red:hover, .stream_complex_number.red:hover {
+  background: #C00 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.admin_result_number.black:hover, .admin_background_number.black:hover, .stream_complex_number.black:hover {
+  background: #000 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.stream_presets_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 224px;
+  overflow: auto;
+}
+
+.stream_preset_block {
+  width: 100%;
+  border: 2px solid white;
+  padding: 7px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.stream_preset_visible {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stream_preset_name {
+  color: white;
+  font-weight: 600;
+}
+
+.stream_preset_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.stream_preset_buttons img, .stream_preset_add {
+  height: 20px;
+  filter: invert(1);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.stream_preset_hide {
+  display: none;
+}
+
+.stream_preset_hidden {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.stream_preset_bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 5px;
+}
+
+.stream_preset_add_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stream_preset_add_block span {
+  color: white;
+  margin-right: 10px;
+}
+
+.stream_preset_set_name_block {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.stream_preset_name_input {
+  margin-top: 5px;
+}
+
+.admin_set_result_confirm {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  height: calc(100% - 20px);
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background-color: white;
+  border: 1px solid #A6A6A6;
+  text-align: center;
+  display: none;
+}
+
+.admin_set_result_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.admin_img_button_container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.admin_img_button {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+
+.admin_img_button_container.disabled img {
+  filter: invert(0.8);
+}
+
+.admin_img_button_container:hover::after {
+  content: attr(data-title);
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  bottom: 50%;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-wrap: nowrap;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  pointer-events: none;
+}
+
+@media (max-width: 1540px) {
+  .stream_close_table_bottom {
+    display: none;
+  }
+}
+@media (max-width: 1460px) {
+  .stream_bottom_content {
+    height: 27vw;
+  }
+  .stream_bottom_block {
+    bottom: calc(-27vw - 20px);
+  }
+}
+@media (max-width: 1300px) {
+  .admin_content, .admin_header, .stream_content {
+    width: 100%;
+  }
+  .stream_bottom_content {
+    height: 29vw;
+  }
+  .stream_bottom_block {
+    bottom: calc(-29vw - 20px);
+  }
+  .stream_field_chip {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .stream_roulette_block {
+    width: 90%;
+  }
+  .stream_track_block {
+    width: 100%;
+    display: none;
+  }
+  .stream_bottom_content {
+    height: 46vw;
+  }
+  .stream_bottom_block {
+    bottom: calc(-46vw - 20px);
+  }
+  .stream_swap_roulette, .stream_swap_track, .stream_close_table_roulette, .stream_close_table_track {
+    display: flex;
+  }
+  .stream_close_table {
+    width: 50px;
+  }
+  .stream_info_block {
+    top: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .stream_logout {
+    top: 5px;
+  }
+  .stream_info_content {
+    white-space: normal;
+    text-align: center;
+    padding: 5px;
+  }
+  .stream_info {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .admin_balance_changes, .admin_numbers_block {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .admin_table_small {
+    width: calc(25vw - 130px);
+    min-width: calc(25vw - 130px);
+    max-width: calc(25vw - 130px);
+    overflow: hidden;
+  }
+  .admin_bets {
+    width: 100%;
+    align-items: center;
+  }
+  .admin_past_bets {
+    min-width: auto;
+    width: 100%;
+  }
+  .admin_active_users > tbody > tr:first-child > th:nth-child(3) {
+    width: 100px;
+    min-width: 100px;
+  }
+  .admin_bet_value {
+    margin: 0 calc(12vw - 80px);
+  }
+}
+@media (max-width: 1024px) and (min-aspect-ratio: 5/3) {
+  .stream_bottom_content {
+    height: 100vh;
+  }
+  .stream_bottom_block {
+    bottom: calc(-100vh - 20px);
+  }
+  .stream_roulette_block {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) and (min-aspect-ratio: 5/2) {
+  .stream_roulette_block {
+    width: 70%;
+  }
+}
+@media (max-height: 320px) {
+  .stream_close_table, .stream_swap {
+    width: 30px;
+  }
+  .stream_swap_roulette {
+    left: calc(50% - 15px);
+  }
+  .stream_close_table_roulette {
+    left: calc(50% - 5px);
+  }
+  .stream_buttons_block {
+    width: 200px;
+  }
+  .stream_buttons_block > img {
+    width: 30px;
+  }
+  .stream_balance_block {
+    width: 150px;
+    font-size: 14px;
+  }
+  .stream_bets_total, .stream_numbers_block, .stream_number {
+    font-size: 14px;
+  }
+  .stream_summary_block {
+    padding-top: 5px;
+  }
+  .stream_bets_block {
+    height: calc(100% - 40px);
+    top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .stream_open_table {
+    right: 10px;
+  }
+  .admin_bets_block, .admin_content, .admin_balance_changes, .admin_numbers_block {
+    font-size: 14px;
+  }
+  .admin_content {
+    max-width: calc(100% - 40px);
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0 20px;
+  }
+  .admin_table_small {
+    width: calc(25vw - 110px);
+    min-width: calc(25vw - 110px);
+    max-width: calc(25vw - 110px);
+  }
+  .admin_table_large {
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+  }
+  .admin_bet_value {
+    margin: 0 calc(12vw - 70px);
+  }
+}
+@media (max-width: 768px) and (max-aspect-ratio: 1/1), (max-width: 400px) {
+  .stream_field_block {
+    width: calc(100% - 170px);
+    height: 80%;
+    align-items: normal;
+  }
+  .stream_bottom_content {
+    height: 100vh;
+    background-color: #1C7022;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+  }
+  .stream_balance_change {
+    height: 16px;
+    margin-bottom: 5px;
+  }
+  .stream_bottom_block {
+    bottom: calc(-100vh - 20px);
+  }
+  .stream_field_chip, .stream_chip_favorites {
+    transform: rotate(-90deg);
+  }
+  .stream_complex_table > tbody {
+    display: flex;
+    position: relative;
+    border: 1px solid white;
+    flex-direction: row-reverse;
+  }
+  #complex_0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94px;
+  }
+  .stream_complex_table tr {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .stream_complex_table td {
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stream_roulette_block {
+    flex-grow: 1;
+    align-items: center;
+  }
+  .stream_track_block {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .stream_balance_block {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stream_balance {
+    margin: 0;
+  }
+  .stream_swap_roulette, .stream_swap_track, .stream_close_table_roulette, .stream_close_table_track, .stream_rotate {
+    transform: rotate(-90deg);
+  }
+  .stream_swap_roulette {
+    width: auto;
+    height: 60%;
+    bottom: 20%;
+    left: 0;
+  }
+  .stream_close_table_roulette {
+    width: auto;
+    height: 60%;
+    bottom: 20%;
+    left: 5%;
+  }
+  .stream_swap_track, .stream_close_table_track, .stream_rotate {
+    width: auto;
+    height: 40%;
+    bottom: -40%;
+  }
+  .stream_rotate {
+    height: 30%;
+  }
+  .stream_numbers_block {
+    flex-direction: column;
+    height: calc(100% - 140px);
+    max-height: calc(100% - 140px);
+    width: 70px;
+    margin-bottom: 0;
+  }
+  .stream_numbers_label {
+    font-size: 14px;
+    top: 0;
+    left: auto;
+  }
+  .stream_number {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  .stream_summary_block {
+    flex-direction: column-reverse;
+    width: 70px;
+    padding: 5px;
+    height: 100%;
+    justify-content: space-around;
+  }
+  .stream_summary_block > .stream_bets_total {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stream_summary_block > .stream_bets_total > span {
+    margin: 0;
+  }
+  .stream_buttons_block {
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .stream_buttons_block > img {
+    margin-bottom: 3px;
+  }
+  .stream_chips_block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .stream_favorites_block, .stream_settings_block {
+    width: 90vw;
+  }
+  .stream_preset_add_block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .stream_preset_add {
+    margin-top: 10px;
+  }
+  .stream_chat_arrow, .stream_bets_arrow, .stream_telegram_arrow {
+    display: none;
+  }
+  .stream_chat_block {
+    left: auto;
+    right: -300px;
+  }
+  .stream_bets_block {
+    top: auto;
+    bottom: 100px;
+  }
+  .stream_petal {
+    width: 80px;
+    height: 35px;
+    position: fixed;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .stream_telegram_petal {
+    background-color: #24a1de;
+    bottom: 250px;
+    text-decoration: none;
+  }
+  .stream_bets_petal {
+    background-color: black;
+    bottom: 205px;
+  }
+  .stream_chat_petal {
+    background-color: #c4302b;
+    bottom: 160px;
+  }
+  .stream_petal > span {
+    pointer-events: none;
+  }
+  .stream_petal > .open {
+    opacity: 0;
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+  }
+  .stream_telegram {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (max-aspect-ratio: 1/2) {
+  .stream_field_block {
+    height: 160vw;
+  }
+}
+@media (max-width: 600px) {
+  .admin_table_small {
+    width: 36px;
+    min-width: 36px;
+    max-width: 36px;
+  }
+  .admin_table_large {
+    width: calc(50vw - 117px);
+    min-width: calc(50vw - 117px);
+    max-width: calc(50vw - 117px);
+  }
+  .admin_bet_value {
+    margin: 0 3px;
+  }
+  .choose_stream_block {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+  }
+  .stream_ask_block {
+    width: calc(100vw - 40px);
+    height: auto;
+    top: calc(50vh - 100px);
+    left: 10px;
+    padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .stream_bets_block {
+    right: -255px;
+  }
+  .stream_chat_block {
+    left: -255px;
+  }
+  .stream_bets_content, .stream_chat_content {
+    width: 255px;
+  }
+  .stream_bets {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+@media (max-width: 275px) {
+  .stream_bets_block {
+    right: calc(-100% + 20px);
+    width: 100%;
+  }
+  .stream_chat_block {
+    left: calc(-100% + 20px);
+    width: 100%;
+  }
+  .stream_bets_content, .stream_chat_content {
+    width: calc(100% - 20px);
+  }
+}/*# sourceMappingURL=style.css.map */

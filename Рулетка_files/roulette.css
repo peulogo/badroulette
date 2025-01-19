@@ -1,0 +1,261 @@
+.roulette {
+  display: grid;
+  position: relative;
+  grid-template-columns: 9% 84% 7%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-areas: "zero nums_1 nums_1" "zero nums_2 nums_2" "zero nums_3 nums_3" "empty_1 twelves empty_2" "empty_1 fifties empty_2";
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 1/0.35;
+}
+
+.roulette > div {
+  display: flex;
+}
+
+.num, .sector {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 100%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.num, .vt {
+  width: 7.6923076923%;
+}
+
+.num > span, .sector > span {
+  display: block;
+  transform: rotate(270deg);
+  pointer-events: none;
+}
+
+.border {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  z-index: 2;
+}
+
+.corner, .basket, .six-line, .first-four {
+  z-index: 3;
+  left: calc(-5% - 1px);
+  bottom: calc(-5% - 1px);
+}
+
+.vertical {
+  height: 100%;
+  left: calc(-5% - 1px);
+  bottom: 0;
+}
+
+.horizontal, .street {
+  width: 100%;
+  left: 0;
+  bottom: calc(-5% - 1px);
+}
+
+/* elements */
+.roulette .sector {
+  background: #1C7022;
+  color: #8EB891;
+}
+
+.roulette .num {
+  font-size: 20px;
+}
+
+.roulette .zero {
+  grid-area: zero;
+  font-size: 56px;
+  width: 100%;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.roulette .empty {
+  border: none;
+  background-color: #1C7022;
+  position: relative;
+}
+
+.nums_1 {
+  grid-area: nums_1;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.nums_2 {
+  grid-area: nums_2;
+  border-right: 1px solid white;
+}
+
+.nums_3 {
+  grid-area: nums_3;
+  border-right: 1px solid white;
+}
+
+.empty_left {
+  grid-area: empty_1;
+  border-top: 1px solid white;
+}
+
+.empty_right {
+  grid-area: empty_2;
+  border-top: 1px solid white;
+}
+
+.admin_roulette_12s {
+  grid-area: twelves;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.admin_roulette_50s {
+  grid-area: fifties;
+  border: 1px solid white;
+  border-top-width: 1px;
+}
+
+.admin_roulette_12s > div {
+  width: 33.3333333333%;
+}
+
+.admin_roulette_50s > div {
+  width: 16.6666666667%;
+}
+
+/* colors */
+.roulette .green {
+  background: #1C7022;
+  color: #8EB891;
+}
+
+.roulette .red {
+  background: #A91607;
+  color: #8EB891;
+}
+
+.roulette .black {
+  background: #0E3811;
+  color: #8EB891;
+}
+
+/* cells hovers */
+.sector.hover,
+.num.hover, .num.number_won {
+  box-shadow: inset 0 0 5px #FFF, inset 0 0 5px #FFF;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.sector.hover {
+  background: #1C9022 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.green.hover, .green.number_won {
+  background: #3CC042 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.red.hover, .red.number_won {
+  background: #C00 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+.black.hover, .black.number_won {
+  background: #000 !important;
+  color: #FBEC0F !important;
+  cursor: pointer;
+}
+
+/* others */
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1700px) {
+  .roulette .vt {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1500px) {
+  .roulette .vt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1500px) {
+  .roulette .vt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1150px) {
+  .roulette .sector {
+    font-size: 16px;
+  }
+  .roulette .num {
+    font-size: 18px;
+  }
+  .roulette .zero {
+    font-size: 46px;
+  }
+  .roulette .vt {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) and (max-aspect-ratio: 1/1), (max-width: 400px) {
+  .roulette {
+    transform: rotate(90deg);
+    width: auto;
+    height: 35%;
+  }
+}
+@media (max-width: 768px) and (max-height: 650px) {
+  .roulette .sector {
+    font-size: 14px;
+  }
+  .roulette .num {
+    font-size: 16px;
+  }
+  .roulette .zero {
+    font-size: 36px;
+  }
+  .roulette .vt {
+    font-size: 10px;
+  }
+  .stream_field_chip {
+    font-size: 10px;
+  }
+}
+@media (max-width: 520px) and (max-height: 450px) {
+  .roulette .sector {
+    font-size: 12px;
+  }
+  .roulette .num {
+    font-size: 14px;
+  }
+  .roulette .zero {
+    font-size: 26px;
+  }
+  .roulette .vt {
+    font-size: 8px;
+  }
+  .stream_field_chip {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=roulette.css.map */
