@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Рулетка</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./Рулетка_files/style.css">
+	<link rel="stylesheet" href="./Рулетка_files/roulette.css">
+	<link rel="stylesheet" href="./Рулетка_files/track.css">
+    <script src="./Рулетка_files/jquery-3.6.0.min.js"></script>
+    <script src="./Рулетка_files/user.js"></script>
+</head>
+<body>
+	<input type="hidden" name="csrfmiddlewaretoken" value="9fkl2zZrfGJa1W1b9aqIDcbOUqblGY3wLdSEIylDh3OfoM77hZHEUqQ5J8TPM04L">
+	<input type="hidden" value="242" id="user_id">
+	
+	
+	
+	
+	
+	
+	<input type="hidden" value="10000" id="fake_amount">
+	
+	<input type="hidden" value="True" id="user_status">
+    <input type="hidden" value="static/" id="static_url">
+	<div class="stream_logout"><img src="./Рулетка_files/stream_logout.png" alt="logout"></div>
+	<div class="stream_ask_block">Вы не подключены к данной игре. Пожалуйста, подождите или <span class="stream_ask">запросите подключение.</span></div>
+	<div class="stream_info_block">
+		<div class="stream_info">
+			<span class="stream_info_exclamation">!</span>
+			<div class="stream_info_content">Вы подключены к данной игре. Вы играете на фантики</div>
+		</div>
+	</div>
+	<input type="hidden" value="https://youtube.com/embed/3mbdK9PXGsg" id="youtube_stream_link"><iframe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="stream_video" src="./Рулетка_files/3mbdK9PXGsg.html"></iframe>
+	<div class="stream_chat_block">
+		<div class="stream_chat_content">
+			<input type="hidden" value="https://youtube.com/live_chat?v=3mbdK9PXGsg&amp;embed_domain=" id="chat-link"><iframe referrerpolicy="origin" src="./Рулетка_files/live_chat.html" width="calc(100% - 4px)" height="100%" id="chat"></iframe>
+		</div>
+		<div class="stream_chat_arrow" style="width: 40px;">
+			<img src="./Рулетка_files/arrow.svg" alt="^" class="stream_arrow_img">
+			<span class="stream_arrow_text">Чат</span>
+		</div>
+	</div>
+	
+		<a class="stream_telegram_petal stream_petal" href="https://t.me/channelbadroulette" target="_blank"><span class="open">X</span><span class="closed">Телеграм</span></a>
+		<a class="stream_telegram_arrow" href="https://t.me/channelbadroulette" target="_blank">
+			<span class="stream_arrow_text">Телеграм</span>
+		</a>
+	
+	<div class="stream_bets_petal stream_petal"><span class="open">X</span><span class="closed">История</span></div>
+	<div class="stream_chat_petal stream_petal"><span class="open">X</span><span class="closed">Чат</span></div>
+	<div class="stream_bottom_block" style="bottom: 0px;">
+		<div class="stream_bottom_arrow">
+			<img src="./Рулетка_files/arrow.svg" alt="^" class="stream_arrow_img" style="display: flex;">
+		</div>
+		<div class="stream_bottom_content">
+			<div class="stream_numbers_block">
+				<span class="stream_numbers_label">Выпали:</span>
+				
+					<span class="stream_number black stream_number_8">13</span>
+				
+					<span class="stream_number black stream_number_7">13</span>
+				
+					<span class="stream_number black stream_number_6">13</span>
+				
+					<span class="stream_number red stream_number_5">16</span>
+				
+					<span class="stream_number black stream_number_4">17</span>
+				
+					<span class="stream_number black stream_number_3">20</span>
+				
+					<span class="stream_number black stream_number_2">20</span>
+				
+					<span class="stream_number black stream_number_1">17</span>
+				
+			</div>
+			<div class="stream_field_block">
+				<div class="stream_track_block">
+					<div class="track">
+						<img src="./Рулетка_files/swap.svg" alt="track/field" class="stream_swap stream_swap_track">
+						<img src="./Рулетка_files/close_table.svg" alt="close table" class="stream_close_table stream_close_table_track">
+						<img src="./Рулетка_files/rotate.svg" alt="rotate" class="stream_rotate">
+						<div class="track_left">
+							<div class="track_num_block track_5_block">
+								<div class="track_num tiers red" id="track_5">5</div>
+							</div>
+							<div class="line line_5_10"></div>
+							<div class="track_num tiers black" id="track_10">10</div>
+							<div class="track_num tiers red" id="track_23">23</div>
+							<div class="line line_23_8"></div>
+							<div class="track_num_block track_8_block">
+								<div class="track_num tiers black" id="track_8">8</div>
+							</div>
+						</div>
+						<div class="track_center">
+							<div class="track_top_line">
+								<div class="track_num tiers black" id="track_24">24</div>
+								<div class="track_num tiers red" id="track_16">16</div>
+								<div class="track_num tiers black" id="track_33">33</div>
+								<div class="track_num orphelins red" id="track_1">1</div>
+								<div class="track_num orphelins black" id="track_20">20</div>
+								<div class="track_num orphelins red" id="track_14">14</div>
+								<div class="track_num orphelins black" id="track_31">31</div>
+								<div class="track_num orphelins red" id="track_9">9</div>
+								<div class="track_num voisins black" id="track_22">22</div>
+								<div class="track_num voisins red" id="track_18">18</div>
+								<div class="track_num voisins black" id="track_29">29</div>
+								<div class="track_num voisins red" id="track_7">7</div>
+								<div class="track_num voisins black" id="track_28">28</div>
+								<div class="track_num jeu voisins red" id="track_12">12</div>
+								<div class="track_num jeu voisins black" id="track_35">35</div>
+							</div>
+							<div class="track_bottom_line">
+								<div class="track_num tiers red" id="track_30">30</div>
+								<div class="track_num tiers black" id="track_11">11</div>
+								<div class="track_num tiers red" id="track_36">36</div>
+								<div class="track_num tiers black" id="track_13">13</div>
+								<div class="track_num tiers red" id="track_27">27</div>
+								<div class="track_num orphelins black" id="track_6">6</div>
+								<div class="track_num orphelins red" id="track_34">34</div>
+								<div class="track_num orphelins black" id="track_17">17</div>
+								<div class="track_num voisins red" id="track_25">25</div>
+								<div class="track_num voisins black" id="track_2">2</div>
+								<div class="track_num voisins red" id="track_21">21</div>
+								<div class="track_num voisins black" id="track_4">4</div>
+								<div class="track_num voisins red" id="track_19">19</div>
+								<div class="track_num jeu voisins black" id="track_15">15</div>
+								<div class="track_num jeu voisins red" id="track_32">32</div>
+							</div>
+						</div>
+						<div class="track_right">
+							<div class="track_num_block track_3_block">
+								<div class="track_num jeu voisins red" id="track_3">3</div>
+							</div>
+							<div class="line line_3_26"></div>
+							<div class="track_num jeu voisins black" id="track_26">26</div>
+							<div class="line line_26_0"></div>
+							<div class="track_num_block track_0_block">
+								<div class="track_num jeu voisins green" id="track_0">0</div>
+							</div>
+						</div>
+						<div class="track_sector_block tiers_block">
+							<div class="track_sector tiers" id="tiers">TIERS</div>
+						</div>
+						<div class="track_sector_block orphelins_block">
+							<div class="track_sector orphelins" id="orphelins">ORPHELINS</div>
+						</div>
+						<div class="line line_tiers_orphelins"></div>
+						<div class="track_sector_block voisins_block">
+							<div class="track_sector voisins" id="voisins">VOISINS</div>
+						</div>
+						<div class="track_sector_block jeu_block">
+							<div class="track_sector jeu" id="jeu">JEU 0</div>
+						</div>
+					</div>
+				</div>
+				<div class="stream_roulette_block">
+					<div class="roulette">
+						<div class="num green zero" id="0"><span>0</span></div>
+						<div class="nums nums_1">
+							<div class="num red odd 1_to_18 3rd_column 1st_12" id="3">
+								<span>3</span>
+								<div class="border split vertical" id="0_3"></div>
+								<div class="border basket" id="0_2_3"></div>
+								<div class="border split horizontal" id="2_3"></div>
+							</div>
+							<div class="num black even 1_to_18 3rd_column 1st_12" id="6">
+								<span>6</span>
+								<div class="border split vertical" id="3_6"></div>
+								<div class="border corner" id="2_3_5_6"></div>
+								<div class="border split horizontal" id="5_6"></div>
+							</div>
+							<div class="num red odd 1_to_18 3rd_column 1st_12" id="9">
+								<span>9</span>
+								<div class="border split vertical" id="6_9"></div>
+								<div class="border corner" id="5_6_8_9"></div>
+								<div class="border split horizontal" id="8_9"></div>
+							</div>
+							<div class="num red even 1_to_18 3rd_column 1st_12" id="12">
+								<span>12</span>
+								<div class="border split vertical" id="9_12"></div>
+								<div class="border corner" id="8_9_11_12"></div>
+								<div class="border split horizontal" id="11_12"></div>
+							</div>
+							<div class="num black odd 1_to_18 3rd_column 2nd_12" id="15">
+								<span>15</span>
+								<div class="border split vertical" id="12_15"></div>
+								<div class="border corner" id="11_12_14_15"></div>
+								<div class="border split horizontal" id="14_15"></div>
+							</div>
+							<div class="num red even 1_to_18 3rd_column 2nd_12" id="18">
+								<span>18</span>
+								<div class="border split vertical" id="15_18"></div>
+								<div class="border corner" id="14_15_17_18"></div>
+								<div class="border split horizontal" id="17_18"></div>
+							</div>
+							<div class="num red odd 19_to_36 3rd_column 2nd_12" id="21">
+								<span>21</span>
+								<div class="border split vertical" id="18_21"></div>
+								<div class="border corner" id="17_18_20_21"></div>
+								<div class="border split horizontal" id="20_21"></div>
+							</div>
+							<div class="num black even 19_to_36 3rd_column 2nd_12" id="24">
+								<span>24</span>
+								<div class="border split vertical" id="21_24"></div>
+								<div class="border corner" id="20_21_23_24"></div>
+								<div class="border split horizontal" id="23_24"></div>
+							</div>
+							<div class="num red odd 19_to_36 3rd_column 3rd_12" id="27">
+								<span>27</span>
+								<div class="border split vertical" id="24_27"></div>
+								<div class="border corner" id="23_24_26_27"></div>
+								<div class="border split horizontal" id="26_27"></div>
+							</div>
+							<div class="num red even 19_to_36 3rd_column 3rd_12" id="30">
+								<span>30</span>
+								<div class="border split vertical" id="27_30"></div>
+								<div class="border corner" id="26_27_29_30"></div>
+								<div class="border split horizontal" id="29_30"></div>
+							</div>
+							<div class="num black odd 19_to_36 3rd_column 3rd_12" id="33">
+								<span>33</span>
+								<div class="border split vertical" id="30_33"></div>
+								<div class="border corner" id="29_30_32_33"></div>
+								<div class="border split horizontal" id="32_33"></div>
+							</div>
+							<div class="num red even 19_to_36 3rd_column 3rd_12" id="36">
+								<span>36</span>
+								<div class="border split vertical" id="33_36"></div>
+								<div class="border corner" id="32_33_35_36"></div>
+								<div class="border split horizontal" id="35_36"></div>
+							</div>
+							<div class="sector 3rd_column vt" id="3rd column"><span>2 to 1</span></div>
+						</div>
+						<div class="nums nums_2">
+							<div class="hidden"></div>
+							<div class="num black even 1_to_18 2nd_column 1st_12" id="2">
+								<span>2</span>
+								<div class="border split vertical" id="0_2"></div>
+								<div class="border basket" id="0_1_2"></div>
+								<div class="border split horizontal" id="1_2"></div>
+							</div>
+							<div class="num red odd 1_to_18 2nd_column 1st_12" id="5">
+								<span>5</span>
+								<div class="border split vertical" id="2_5"></div>
+								<div class="border corner" id="1_2_4_5"></div>
+								<div class="border split horizontal" id="4_5"></div>
+							</div>
+							<div class="num black even 1_to_18 2nd_column 1st_12" id="8">
+								<span>8</span>
+								<div class="border split vertical" id="5_8"></div>
+								<div class="border corner" id="4_5_7_8"></div>
+								<div class="border split horizontal" id="7_8"></div>
+							</div>
+							<div class="num black odd 1_to_18 2nd_column 1st_12" id="11">
+								<span>11</span>
+								<div class="border split vertical" id="8_11"></div>
+								<div class="border corner" id="7_8_10_11"></div>
+								<div class="border split horizontal" id="10_11"></div>
+							</div>
+							<div class="num red even 1_to_18 2nd_column 2nd_12" id="14">
+								<span>14</span>
+								<div class="border split vertical" id="11_14"></div>
+								<div class="border corner" id="10_11_13_14"></div>
+								<div class="border split horizontal" id="13_14"></div>
+							</div>
+							<div class="num black odd 1_to_18 2nd_column 2nd_12" id="17">
+								<span>17</span>
+								<div class="border split vertical" id="14_17"></div>
+								<div class="border corner" id="13_14_16_17"></div>
+								<div class="border split horizontal" id="16_17"></div>
+							</div>
+							<div class="num black even 19_to_36 2nd_column 2nd_12" id="20">
+								<span>20</span>
+								<div class="border split vertical" id="17_20"></div>
+								<div class="border corner" id="16_17_19_20"></div>
+								<div class="border split horizontal" id="19_20"></div>
+							</div>
+							<div class="num red odd 19_to_36 2nd_column 2nd_12" id="23">
+								<span>23</span>
+								<div class="border split vertical" id="20_23"></div>
+								<div class="border corner" id="19_20_22_23"></div>
+								<div class="border split horizontal" id="22_23"></div>
+							</div>
+							<div class="num black even 19_to_36 2nd_column 3rd_12" id="26">
+								<span>26</span>
+								<div class="border split vertical" id="23_26"></div>
+								<div class="border corner" id="22_23_25_26"></div>
+								<div class="border split horizontal" id="25_26"></div>
+							</div>
+							<div class="num black odd 19_to_36 2nd_column 3rd_12" id="29">
+								<span>29</span>
+								<div class="border split vertical" id="26_29"></div>
+								<div class="border corner" id="25_26_28_29"></div>
+								<div class="border split horizontal" id="28_29"></div>
+							</div>
+							<div class="num red even 19_to_36 2nd_column 3rd_12" id="32">
+								<span>32</span>
+								<div class="border split vertical" id="29_32"></div>
+								<div class="border corner" id="28_29_31_32"></div>
+								<div class="border split horizontal" id="31_32"></div>
+							</div>
+							<div class="num black odd 19_to_36 2nd_column 3rd_12" id="35">
+								<span>35</span>
+								<div class="border split vertical" id="32_35"></div>
+								<div class="border corner" id="31_32_34_35"></div>
+								<div class="border split horizontal" id="34_35"></div>
+							</div>
+							<div class="sector 2nd_column vt" id="2nd column"><span>2 to 1</span></div>
+						</div>
+						<div class="nums nums_3">
+							<div class="hidden"></div>
+							<div class="num red odd 1_to_18 1st_column 1st_12" id="1">
+								<span>1</span>
+								<div class="border split vertical" id="0_1"></div>
+								<div class="border first-four" id="0_1_2_3"></div>
+								<div class="border street" id="1_2_3"></div>
+							</div>
+							<div class="num black even 1_to_18 1st_column 1st_12" id="4">
+								<span>4</span>
+								<div class="border split vertical" id="1_4"></div>
+								<div class="border six-line" id="1_2_3_4_5_6"></div>
+								<div class="border street" id="4_5_6"></div>
+							</div>
+							<div class="num red odd 1_to_18 1st_column 1st_12" id="7">
+								<span>7</span>
+								<div class="border split vertical" id="4_7"></div>
+								<div class="border six-line" id="4_5_6_7_8_9"></div>
+								<div class="border street" id="7_8_9"></div>
+							</div>
+							<div class="num black even 1_to_18 1st_column 1st_12" id="10">
+								<span>10</span>
+								<div class="border split vertical" id="7_10"></div>
+								<div class="border six-line" id="7_8_9_10_11_12"></div>
+								<div class="border street" id="10_11_12"></div>
+							</div>
+							<div class="num black odd 1_to_18 1st_column 2nd_12" id="13">
+								<span>13</span>
+								<div class="border split vertical" id="10_13"></div>
+								<div class="border six-line" id="10_11_12_13_14_15"></div>
+								<div class="border street" id="13_14_15"></div>
+							</div>
+							<div class="num red even 1_to_18 1st_column 2nd_12" id="16">
+								<span>16</span>
+								<div class="border split vertical" id="13_16"></div>
+								<div class="border six-line" id="13_14_15_16_17_18"></div>
+								<div class="border street" id="16_17_18"></div>
+							</div>
+							<div class="num red odd 19_to_36 1st_column 2nd_12" id="19">
+								<span>19</span>
+								<div class="border split vertical" id="16_19"></div>
+								<div class="border six-line" id="16_17_18_19_20_21"></div>
+								<div class="border street" id="19_20_21"></div>
+							</div>
+							<div class="num black even 19_to_36 1st_column 2nd_12" id="22">
+								<span>22</span>
+								<div class="border split vertical" id="19_22"></div>
+								<div class="border six-line" id="19_20_21_22_23_24"></div>
+								<div class="border street" id="22_23_24"></div>
+							</div>
+							<div class="num red odd 19_to_36 1st_column 3rd_12" id="25">
+								<span>25</span>
+								<div class="border split vertical" id="22_25"></div>
+								<div class="border six-line" id="22_23_24_25_26_27"></div>
+								<div class="border street" id="25_26_27"></div>
+							</div>
+							<div class="num black even 19_to_36 1st_column 3rd_12" id="28">
+								<span>28</span>
+								<div class="border split vertical" id="25_28"></div>
+								<div class="border six-line" id="25_26_27_28_29_30"></div>
+								<div class="border street" id="28_29_30"></div>
+							</div>
+							<div class="num black odd 19_to_36 1st_column 3rd_12" id="31">
+								<span>31</span>
+								<div class="border split vertical" id="28_31"></div>
+								<div class="border six-line" id="28_29_30_31_32_33"></div>
+								<div class="border street" id="31_32_33"></div>
+							</div>
+							<div class="num red even 19_to_36 1st_column 3rd_12" id="34">
+								<span>34</span>
+								<div class="border split vertical" id="31_34"></div>
+								<div class="border six-line" id="31_32_33_34_35_36"></div>
+								<div class="border street" id="34_35_36"></div>
+							</div>
+							<div class="sector 1st_column vt" id="1st column"><span>2 to 1</span></div>
+						</div>
+						<div class="empty empty_left">
+							<img src="./Рулетка_files/swap.svg" alt="track/field" class="stream_swap stream_swap_roulette">
+						</div>
+						<div class="admin_roulette_12s">
+							<div colspan="4" class="sector 1st_12" id="1st 12">1st 12</div>
+							<div colspan="4" class="sector 2nd_12" id="2nd 12">2nd 12</div>
+							<div colspan="4" class="sector 3rd_12" id="3rd 12">3rd 12</div>
+						</div>
+						<div class="admin_roulette_50s">
+							<div class="sector 1_to_18" id="1 to 18">1 to 18</div>
+							<div class="sector even" id="Even">EVEN</div>
+							<div class="sector red" id="Red">RED</div>
+							<div class="sector black" id="Black">BLACK</div>
+							<div class="sector odd" id="Odd">ODD</div>
+							<div class="sector 19_to_36" id="19 to 36">19 to 36</div>
+						</div>
+						<div class="empty empty_right">
+							<img src="./Рулетка_files/close_table.svg" alt="close table" class="stream_close_table stream_close_table_roulette">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stream_summary_block" style="visibility: visible;">
+				<div class="stream_bets_total" style="display: flex;">Ставки: <span>0</span></div>
+				<div class="stream_balance_block">
+					<span>Баланс:</span>
+					<div style="display: flex; align-items: center;">
+						<span class="stream_balance">10000</span>
+						<img src="./Рулетка_files/fake.png" alt="fake" class="stream_fake" style="display: flex;">
+						<img src="./Рулетка_files/add_fakes.png" alt="add" class="stream_add_fakes">
+					</div>
+					<span class="stream_balance_change"></span>
+				</div>
+				<div class="stream_buttons_block" style="visibility: visible;">
+					<img src="./Рулетка_files/clear.svg" alt="clear" class="stream_clear">
+					<img src="./Рулетка_files/reset.svg" alt="reset" class="stream_reset_bets">
+					<img src="./Рулетка_files/repeat.svg" alt="repeat" class="stream_repeat disabled">
+					<img src="./Рулетка_files/double.svg" alt="double" class="stream_double">
+					<img src="./Рулетка_files/favorites.svg" alt="favorites" class="stream_favorites">
+					<img src="./Рулетка_files/spin.svg" alt="spin" class="stream_spin disabled">
+					<img src="./Рулетка_files/undo_spin.svg" alt="undo" class="stream_undo_spin" style="display: none;">
+					<img src="./Рулетка_files/stream_settings.png" alt="tournament" class="stream_settings">
+					<img src="./Рулетка_files/participate.png" alt="tournament" class="stream_participate">
+				</div>
+				<div class="stream_chips_block">
+					
+						<div class="stream_chip chip_1320 stream_chip_selected" data-value="5" style="background-color: #af43ae;"><span class="stream_chip_value value_1320">5</span></div>
+					
+					<div class="stream_chip stream_erase" alt="erase">-</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="stream_bets_block">
+		<div class="stream_bets_arrow" style="width: 40px;">
+			<img src="./Рулетка_files/arrow.svg" alt="^" class="stream_arrow_img">
+			<span class="stream_arrow_text">История</span>
+		</div>
+		<div class="stream_bets_content">
+			<div class="stream_bets" style="display: flex;"><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 13</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 13</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 13</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 16</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 17</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 20</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 20</span><hr class="stream_bets_line"><span class="stream_past_bet">Результат: <span class="stream_bets_change">+0</span></span><span class="stream_past_bet">Ставки: 0</span><span class="stream_past_bet stream_bet_number">Число: 17</span></div>
+			<div class="stream_bets_total" style="display: flex;">Итого: <span>0</span></div>
+			<div class="stream_bets_balance">Баланс: <span class="stream_balance">10000</span></div>
+			<div class="stream_table_maximum_block" style="display: flex;">Максимум стола: <span class="stream_table_maximum">10000</span>
+			</div>
+		</div>
+	</div>
+	<img src="./Рулетка_files/open_table.png" alt="open table" class="stream_open_table">
+	<div class="stream_background">
+		<div class="stream_favorites_block">
+			<span class="stream_favorites_notification">Для того, чтобы делать ставки, выберите фишку!</span>
+			<span class="stream_favorites_label">Комплексные ставки</span>
+			<select name="complex" class="stream_complex_select">
+				<option value="complex" selected="">Комплит</option>
+				<option value="butterfly">Бабочка</option>
+				<option value="crab">Крабик</option>
+			</select>
+			<table class="stream_complex_table">
+                <tbody><tr id="complex_3_column">
+                    <td class="stream_complex_number green" id="complex_0" rowspan="3">0</td>
+                    <td class="stream_complex_number red first_row" id="complex_3">3</td>
+                    <td class="stream_complex_number black" id="complex_6">6</td>
+                    <td class="stream_complex_number red" id="complex_9">9</td>
+                    <td class="stream_complex_number red" id="complex_12">12</td>
+                    <td class="stream_complex_number black" id="complex_15">15</td>
+                    <td class="stream_complex_number red" id="complex_18">18</td>
+                    <td class="stream_complex_number red" id="complex_21">21</td>
+                    <td class="stream_complex_number black" id="complex_24">24</td>
+                    <td class="stream_complex_number red" id="complex_27">27</td>
+                    <td class="stream_complex_number red" id="complex_30">30</td>
+                    <td class="stream_complex_number black" id="complex_33">33</td>
+                    <td class="stream_complex_number red last_row" id="complex_36">36</td>
+                </tr>
+                <tr id="complex_2_column">
+                    <td class="stream_complex_number black first_row" id="complex_2">2</td>
+                    <td class="stream_complex_number red" id="complex_5">5</td>
+                    <td class="stream_complex_number black" id="complex_8">8</td>
+                    <td class="stream_complex_number black" id="complex_11">11</td>
+                    <td class="stream_complex_number red" id="complex_14">14</td>
+                    <td class="stream_complex_number black" id="complex_17">17</td>
+                    <td class="stream_complex_number black" id="complex_20">20</td>
+                    <td class="stream_complex_number red" id="complex_23">23</td>
+                    <td class="stream_complex_number black" id="complex_26">26</td>
+                    <td class="stream_complex_number black" id="complex_29">29</td>
+                    <td class="stream_complex_number red" id="complex_32">32</td>
+                    <td class="stream_complex_number black last_row" id="complex_35">35</td>
+                </tr>
+                <tr id="complex_1_column">
+                    <td class="stream_complex_number red first_row" id="complex_1">1</td>
+                    <td class="stream_complex_number black" id="complex_4">4</td>
+                    <td class="stream_complex_number red" id="complex_7">7</td>
+                    <td class="stream_complex_number black" id="complex_10">10</td>
+                    <td class="stream_complex_number black" id="complex_13">13</td>
+                    <td class="stream_complex_number red" id="complex_16">16</td>
+                    <td class="stream_complex_number red" id="complex_19">19</td>
+                    <td class="stream_complex_number black" id="complex_22">22</td>
+                    <td class="stream_complex_number red" id="complex_25">25</td>
+                    <td class="stream_complex_number black" id="complex_28">28</td>
+                    <td class="stream_complex_number black" id="complex_31">31</td>
+                    <td class="stream_complex_number red last_row" id="complex_34">34</td>
+                </tr>
+            </tbody></table>
+			<span class="stream_favorites_label" style="margin-bottom: 10px;">Пресеты</span>
+			<div class="stream_presets_block">
+				
+			</div>
+			<div class="stream_preset_add_block">
+				<span>Чтобы добавить пресет, расставьте ставки, а затем нажмите: </span>
+				<img src="./Рулетка_files/admin_add.svg" alt="add" class="stream_preset_add">
+			</div>
+			<div class="stream_preset_set_name_block">
+				<span>Введите название нового пресета и нажмите "Enter": </span>
+				<input type="text" class="stream_preset_name_input" max-length="64">
+			</div>
+		</div>
+		<div class="stream_settings_block">
+			<span class="stream_favorites_label">Конфиденциальность ставок</span>
+			<div class="stream_confidential"><span>Не показывать мои ставки в дашборде</span><input type="checkbox" class="stream_confidential_checkbox"></div>
+			<div class="stream_confidential"><span>Не показывать мой депозит в дашборде</span><input type="checkbox" class="stream_deposit_confidential_checkbox"></div>
+			<span class="stream_favorites_label" style="margin: 20px 0 10px;">Другие настройки</span>
+			<div class="stream_confidential"><span>Скрывать стол при закрытии ставок</span><input type="checkbox" class="stream_hide_table_checkbox" checked=""></div>
+			<div class="stream_confidential"><span>Автоспин (когда возможно)</span><input type="checkbox" class="stream_auto_spin_checkbox"></div>
+			<div class="stream_system_balance_block">Вы вошли, как "fejk37846@gmail.com"</div>
+			<div class="stream_system_balance_block">Ваш системный баланс:<span class="stream_system_balance">0</span></div>
+		</div>
+		<div class="stream_logout_confirmation_block admin_background_content">
+			Вы точно хотите выйти?
+			<div class="admin_background_cancel_buttons">
+				<a href="https://badroulette.ru/logout/" class="roulette_button">Да</a>
+				<span class="roulette_button stream_logout_cancel">Нет</span>
+			</div>
+		</div>
+		<div class="stream_participate_not_enough admin_background_content">У вас на счету <span class="stream_participate_balance"></span>, операция стоит <span class="stream_participate_cost"></span>. Пополните баланс и попробуйте снова.</div>
+		<div class="stream_participate_confirmation_block admin_background_content">
+			У вас на счету <span class="stream_participate_balance"></span>, участие в турнире стоит <span class="stream_participate_cost"></span>. Принять участие?
+			<div class="admin_background_cancel_buttons">
+				<span class="roulette_button stream_participate_confirm">Да</span>
+				<span class="roulette_button stream_logout_cancel">Нет</span>
+			</div>
+		</div>
+		<div class="stream_add_fakes_confirmation_block admin_background_content">
+			У вас на счету <span class="stream_participate_balance"></span>, пополнить количество фишек <span class="stream_participate_cost"></span>. Пополнить?
+			<div class="admin_background_cancel_buttons">
+				<span class="roulette_button stream_add_fakes_confirm">Да</span>
+				<span class="roulette_button stream_logout_cancel">Нет</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stream_timeout"><span class="stream_timeout_minutes"></span>:<span class="stream_timeout_seconds"></span></div>
+
+</body></html>
